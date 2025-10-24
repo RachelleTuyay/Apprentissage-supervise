@@ -1,6 +1,6 @@
 # Apprentissage-supervise
 
-Ce projet consiste a évauler plusieurs clasisfieurs d'un corpus déjà anonté. Puis d'interpréter les résultats.
+Ce projet vise à comparer les performances de plusieurs classifieurs à partir d’un corpus préalablement annoté, avant d’en analyser et d’en interpréter les résultats.
 
 ## Corpus : 
 Transcription de l'oral ayant pour thématique les questions canoniques. 
