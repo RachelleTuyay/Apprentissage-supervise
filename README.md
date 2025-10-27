@@ -1,4 +1,4 @@
-# Apprentissage supervise PROEJT
+# Apprentissage supervise PROJET
 
 Ce projet vise à comparer les performances de plusieurs classifieurs à partir d’un corpus préalablement annoté, avant d’en analyser et d’en interpréter les résultats.
 
