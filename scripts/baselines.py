@@ -17,7 +17,7 @@ df_pd = df.to_pandas()
 
 #X et Y
 X_text = df_pd["question"].astype(str)
-y = df_pd["type de question (simplifié)"].astype(str)
+y = df_pd["Intention"].astype(str)
 
 # Vérifier la distribution initiale des classes
 #print("Distribution initiale des classes :")

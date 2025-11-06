@@ -1,13 +1,13 @@
 import polars as pl
 
 # Charger le corpus
-fichier = "corpus_simplifie_131025.xlsx"
+fichier = "corpus_simplifie_201025.xlsx"
 df = pl.read_excel(fichier)
 
 print("Colonnes disponibles :", df.columns)
 
 # Garder seulement les colonnes souhaitées
-colonnes_a_garder = ["question", "type de question (simplifié)"]
+colonnes_a_garder = ["question", "Intention"]
 df_filtre = df.select(colonnes_a_garder)
 
 print(df_filtre.head())
