@@ -1,0 +1,27 @@
+                               Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken
+Model                                                                                   
+AdaBoostClassifier                 0.70               0.64    None      0.67        0.31
+LogisticRegression                 0.67               0.63    None      0.66        0.11
+RidgeClassifierCV                  0.66               0.62    None      0.65        0.38
+SVC                                0.68               0.62    None      0.65        0.15
+SGDClassifier                      0.70               0.61    None      0.63        0.51
+Perceptron                         0.62               0.60    None      0.63        0.11
+BernoulliNB                        0.67               0.60    None      0.63        0.08
+LGBMClassifier                     0.66               0.57    None      0.60        0.22
+CalibratedClassifierCV             0.67               0.57    None      0.58        4.47
+RandomForestClassifier             0.54               0.51    None      0.61        0.37
+DummyClassifier                    0.61               0.50    None      0.47        0.05
+GaussianNB                         0.49               0.50    None      0.52        0.10
+RidgeClassifier                    0.49               0.47    None      0.58        0.12
+LinearSVC                          0.49               0.47    None      0.58        1.28
+PassiveAggressiveClassifier        0.50               0.47    None      0.58        0.11
+ExtraTreesClassifier               0.50               0.47    None      0.56        0.37
+BaggingClassifier                  0.46               0.45    None      0.53        0.20
+ExtraTreeClassifier                0.44               0.42    None      0.52        0.06
+DecisionTreeClassifier             0.41               0.42    None      0.48        0.08
+LinearDiscriminantAnalysis         0.36               0.37    None      0.49        0.37
+NearestCentroid                    0.24               0.24    None      0.35        0.12
+KNeighborsClassifier               0.15               0.15    None      0.25        0.11
+LabelSpreading                     0.07               0.08    None      0.13        0.10
+LabelPropagation                   0.07               0.08    None      0.13        0.10
+QuadraticDiscriminantAnalysis      0.00               0.00    None      0.00        0.15
