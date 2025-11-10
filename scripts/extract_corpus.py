@@ -4,8 +4,6 @@ import polars as pl
 fichier = "corpus_simplifie_201025.xlsx"
 df = pl.read_excel(fichier)
 
-print("Colonnes disponibles :", df.columns)
-
 # Garder seulement les colonnes souhaitées
 colonnes_a_garder = ["question", "Intention"]
 df_filtre = df.select(colonnes_a_garder)
