@@ -9,6 +9,8 @@ df = df.with_columns(
     pl.col("question")
     .str.replace_all(r"#spk1:", "")  # supprime #spk1:
     .str.replace_all(r"#spk2:", "")  # supprime #spk2:
+    .str.replace_all(r"#spk3:", "")  # supprime #spk3:
+    .str.replace_all(r"#spk5:", "")  # supprime #spk5:
     .alias("question")
 )
 
