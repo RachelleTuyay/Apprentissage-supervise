@@ -1,7 +1,7 @@
 import polars as pl
 
 # Charger le corpus filtré
-fichier = "corpus_filtre.xlsx"
+fichier = "corpus_filtred.xlsx"
 df = pl.read_excel(fichier)
 
 # Nettoyer la colonne "question" en enlevant les balises #spk1: et #spk2:
@@ -14,13 +14,19 @@ df = df.with_columns(
     .alias("question")
 )
 
-#Supprimer les espaces en trop autour du texte
+# Supprimer les disfluences du type : hm, euh, hésitations, répétitions, etc.
 df = df.with_columns(
-    pl.col("question").str.strip_chars().alias("question")
+    pl.col("question")
+    .str.replace(r"\b(euh|hm+)\b", "", literal=False)  # euh, hm...
 )
 
+#Supprimer les espaces en trop autour du texte
+df = df.filter(
+    pl.col("Intention").is_not_null()
+    & (pl.col("Intention").str.strip_chars() != "")
+)
 print(df.head())
 
 # Sauvegarder le corpus
-df.write_excel("corpus_nettoye.xlsx")
-print("Corpus nettoyé enregistré sous 'corpus_nettoye.xlsx'")
+df.write_excel("corpus_cleaned.xlsx")
+print("Corpus nettoyé enregistré.")
