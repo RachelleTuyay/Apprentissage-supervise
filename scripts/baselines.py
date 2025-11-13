@@ -11,7 +11,7 @@ nltk.download("stopwords")
 french_stopwords = stopwords.words("french")
 
 #Chargement du corpus
-fichier = "corpus_nettoye.xlsx"
+fichier = "corpus_cleaned.xlsx"
 df = pl.read_excel(fichier)
 df_pd = df.to_pandas()
 
@@ -31,13 +31,13 @@ vectorizer = TfidfVectorizer(
 )
 X = vectorizer.fit_transform(X_text)
 
-#Split train/test avec stratification ===
+#Split train/test avec stratification
 X_train, X_test, y_train, y_test = train_test_split(
     X,
     y,
     test_size=0.3,
     random_state=42,
-    stratify=y  #garde la proportion des classes
+    stratify=y  
 )
 
 # Vérifier la distribution après split
@@ -46,7 +46,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 #print("Classes dans le jeu de test :")
 #print(y_test.value_counts(), "\n")
 
-#Conversion en Df Pandas ===
+#Conversion en DF Pandas
 X_train_df = pd.DataFrame(X_train.toarray(), columns=vectorizer.get_feature_names_out())
 X_test_df = pd.DataFrame(X_test.toarray(), columns=vectorizer.get_feature_names_out())
 
