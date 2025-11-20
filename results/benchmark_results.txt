@@ -1,0 +1,9 @@
+              Model  Accuracy  Precision   Recall  F1-score
+Logistic Regression  0.746479   0.770837 0.746479  0.734128
+         Linear SVM  0.746479   0.746806 0.746479  0.744212
+      Random Forest  0.746479   0.746806 0.746479  0.744212
+  Gradient Boosting  0.732394   0.731805 0.732394  0.730770
+            XGBoost  0.718310   0.720571 0.718310  0.718871
+           LightGBM  0.760563   0.762520 0.760563  0.757630
+           CatBoost  0.718310   0.717936 0.718310  0.715791
+     Multinomial NB  0.746479   0.754170 0.746479  0.740162
