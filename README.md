@@ -10,7 +10,7 @@ Une non-question, en revanche, ne demande pas réellement d'information. Elle pe
 
 
 ## Classifieurs / Modèles utilisés
-# Apprentissage supervisé de surface : 
+### Apprentissage supervisé de surface : 
 - Logistic Regression
 - Linear SVM
 - Gradient Boosting
@@ -22,6 +22,6 @@ Une non-question, en revanche, ne demande pas réellement d'information. Elle pe
 - ExtraTreesClassifier
 - BaggingClassifier
 
-# Apprentissage supervisé profonde :
+### Apprentissage supervisé profonde :
 - BERT
 - CamemBERT ?
