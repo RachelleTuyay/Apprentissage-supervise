@@ -4,13 +4,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import (accuracy_score,f1_score,precision_score,recall_score)
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.svm import LinearSVC
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.svm import LinearSVC, SVC
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier, ExtraTreesClassifier, BaggingClassifier
 from sklearn.naive_bayes import MultinomialNB
 from xgboost import XGBClassifier
 from lightgbm import LGBMClassifier
 from catboost import CatBoostClassifier
-
 
 #Chargement du corpus + split du jeu de donnée
 fichier = "corpus_cleaned.xlsx"
@@ -58,7 +57,10 @@ models = {
     "XGBoost": XGBClassifier(eval_metric='logloss', use_label_encoder=False),
     "LightGBM": LGBMClassifier(),
     "CatBoost": CatBoostClassifier(verbose=0),
-    "Multinomial NB": MultinomialNB()
+    "Multinomial NB": MultinomialNB(),
+    "AdaBoostClassifier": AdaBoostClassifier(n_estimators=100),
+    "ExtraTreesClassifier" : ExtraTreesClassifier(n_estimators=100),
+    "BaggingClassifier": BaggingClassifier(estimator=SVC(), n_estimators=10)
 }
 
 
@@ -84,4 +86,3 @@ print(df_results)
 
 with open("benchmark_results.txt", "w", encoding="utf-8") as f:
     f.write(df_results.to_string(index=False))
-
