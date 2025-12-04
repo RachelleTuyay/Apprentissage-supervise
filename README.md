@@ -15,8 +15,6 @@ Une non-question, en revanche, ne demande pas réellement d'information. Elle pe
 - Linear SVM
 - Gradient Boosting
 - XGBoost
-- LightBGM
-- CatBoost
 - Multinomial NB (Naives Bayes)
 - AdaBoostClassifier
 - ExtraTreesClassifier
@@ -25,3 +23,4 @@ Une non-question, en revanche, ne demande pas réellement d'information. Elle pe
 ### Apprentissage supervisé profonde :
 - BERT
 - CamemBERT ?
+- FFNN (Feed foward neural network)
