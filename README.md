@@ -23,4 +23,6 @@ Une non-question, en revanche, ne demande pas réellement d'information. Elle pe
 ### Apprentissage supervisé profonde :
 - BERT
 - CamemBERT ?
+- RNN
 - FFNN (Feed foward neural network)
+
