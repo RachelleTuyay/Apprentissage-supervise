@@ -22,7 +22,7 @@ Une non-question, en revanche, ne demande pas réellement d'information. Elle pe
 
 Résultats :
 
-| Models | Accuracy | Precision | Recall | F-score | CV (mean)| Ecart-type (std) |
+| Models | Accuracy | Precision | Recall | F-score | CV (mean)| Ecart-type (std) | 
 | --- | --- | --- | --- | --- | --- | --- |
 | Logistic Regression | 0.916667 | 0.920875 | 0.916667 | 0.916458 | 0.827083 | 0.037034 |
 | SVM | 0.933333 | 0.920875 | 0.933333 | 0.933036 | 0.864583 | 0.028717
@@ -43,8 +43,8 @@ Résultats :
 
 | Models | Accuracy | Precision | Rappel | CV (mean) | Ecart-type (std)| AUC-ROC |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| BERT | 0.866667 |	0.87444 |	0.866667 | 0.866667 |			
-| FlauBERT | 0.758333 |	0.77885 |	0.758333 |	0.752153 |		
+| BERT | 0.866667 |	0.87444 |	0.866667 | 0.866667 |	| |		
+| FlauBERT | 0.758333 |	0.77885 |	0.758333 |	0.752153 |		| |
 | CNN |	0.9083333 |	0.9803921 |	0.8333333 |	0.9009009 |	0.68 |	0.0944 |	0.9641666 |
 | FFN |	0.916667 |	0.962963 |	0.866667 |	0.912281 |	0.847917 |	0.025173 |	0.978611 |
 
