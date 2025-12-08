@@ -40,6 +40,7 @@ Résultats :
 - CamemBERT --> Beaucoup trop lourd , alternative : FlauBERT
 - CNN
 - FFNN (Feed foward neural network)
+
 | Models | Accuracy | Precision | Rappel | CV (mean) | Ecart-type (std)| AUC-ROC |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | BERT | 0.866667 |	0.87444 |	0.866667 | 0.866667 |			
