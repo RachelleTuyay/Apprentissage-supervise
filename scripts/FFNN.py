@@ -57,7 +57,7 @@ y_test_tensor  = torch.tensor(y_test.values, dtype=torch.float32).unsqueeze(1)
 #Création d'un modèle MLP "nn.Sequential()"
 input_size = X_train_tensor.shape[1]
 
-def build_model():
+def build_model(): #source : https://www.datacamp.com/tutorial/feed-forward-neural-networks-explained
     return nn.Sequential(
         nn.Linear(input_size, 128),
         nn.ReLU(),
