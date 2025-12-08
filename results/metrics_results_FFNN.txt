@@ -1,0 +1,2 @@
+ Accuracy  Precision   Recall  F1-score  CV-mean  CV-std  AUC-ROC
+ 0.916667   0.962963 0.866667  0.912281 0.870833 0.01413   0.9775
