@@ -39,7 +39,7 @@ Résultats :
 - BERT
 - FlauBERT
 - CNN
-- FFNN (Feed foward neural network)
+- FFNN (Feed forward neural network)
 
 Résultats : 
 
