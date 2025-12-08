@@ -41,6 +41,7 @@ Résultats :
 - CNN
 - FFNN (Feed foward neural network)
 | Models | Accuracy | Precision | Rappel | CV (mean) | Ecart-type (std)| AUC-ROC |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | BERT | 0.866667 |	0.87444 |	0.866667 | 0.866667 |			
 | FlauBERT | 0.758333 |	0.77885 |	0.758333 |	0.752153 |		
 | CNN |	0.9083333 |	0.9803921 |	0.8333333 |	0.9009009 |	0.68 |	0.0944 |	0.9641666 |
