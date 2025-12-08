@@ -37,8 +37,7 @@ Résultats :
 
 ### Apprentissage supervisé profonde :
 - BERT
-- CamemBERT ? Beaucoup trop lourd , alternative :
-- FlauBERT
-- RNN
+- CamemBERT --> Beaucoup trop lourd , alternative : FlauBERT
+- CNN
 - FFNN (Feed foward neural network)
 
