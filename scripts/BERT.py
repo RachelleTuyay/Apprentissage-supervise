@@ -7,8 +7,8 @@ from sklearn.metrics import accuracy_score, f1_score
 df = pd.read_excel("../corpus/corpus_cleaned.xlsx")
 
 df["input_text"] = ( df["question"].astype(str))
-df["label"] = df["Intention"].astype("category").cat.codes
 
+df["label"] = df["Intention"].astype("category").cat.codes
 labelmap = dict(enumerate(df["Intention"].astype("category").cat.categories))
 print("Map label :", labelmap)
 
@@ -34,7 +34,7 @@ model = BertForSequenceClassification.from_pretrained(
 
 args = TrainingArguments(
     output_dir="results",
-    evaluation_strategy="epoch",
+    eval_strategy="epoch", #evaluation_strategy ou eval_strategy selon la version de transformers
     learning_rate=2e-5,
     per_device_train_batch_size=8,
     per_device_eval_batch_size=8,
