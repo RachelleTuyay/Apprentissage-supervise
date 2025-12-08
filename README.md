@@ -37,9 +37,11 @@ Résultats :
 
 ### Apprentissage supervisé profonde :
 - BERT
-- CamemBERT --> Beaucoup trop lourd , alternative : FlauBERT
+- FlauBERT
 - CNN
 - FFNN (Feed foward neural network)
+
+Résultats : 
 
 | Models | Accuracy | Precision | Rappel | CV (mean) | Ecart-type (std) | AUC-ROC |
 | --- | --- | --- | --- | --- | --- | --- |
